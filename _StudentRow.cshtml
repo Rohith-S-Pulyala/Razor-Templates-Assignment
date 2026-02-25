@@ -1,0 +1,10 @@
+﻿@model (CIS174_TestCoreApp_Pulyala.Models.Student student, int accessLevel)
+
+<tr>
+    <td>@Model.student.FirstName</td>
+    <td>@Model.student.LastName</td>
+    @if (Model.accessLevel >= 8)
+    {
+        <td>@Model.student.Grade</td>
+    }
+</tr>
